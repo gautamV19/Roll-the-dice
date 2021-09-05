@@ -1,0 +1,92 @@
+.point {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: black;
+}
+.face {
+  height: 200px;
+  width: 200px;
+  margin: 4px;
+  display: flex;
+  background-color: aquamarine;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+}
+.cube {
+  transform-style: preserve-3d;
+  margin-top: 30vh;
+  margin-left: 20vw;
+  /* transform: rotatex(455deg) rotateY(-25deg); */
+}
+.front {
+  z-index: 3;
+  /* background-color: yellow; */
+}
+.back {
+  transform: translateZ(200px);
+  /* background-color: blue; */
+}
+.top {
+  z-index: 1;
+  /* background-color: red; */
+  transform: translateY(-100px) translateZ(100px) rotateX(90deg);
+}
+.bottom {
+  /* background-color: green; */
+  transform: translateY(100px) translateZ(100px) rotateX(90deg);
+}
+.right {
+  /* background-color: violet; */
+  transform: translateX(100px) translateZ(100px) rotateY(90deg);
+}
+.left {
+  /* background-color: grey; */
+  transform: translateX(-100px) translateZ(100px) rotateY(90deg);
+}
+
+.cube-two {
+  margin-top: 30vh;
+  margin-left: 70vw;
+}
+
+.back-point {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+button {
+  background-color: aqua;
+  margin-top: 40vh;
+  margin-left: 45vw;
+  font-size: 50px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* @keyframes roll {
+  from {
+  }
+  /* 50% {
+    transform: rotateY(90deg);
+  }
+  75% {
+    transform: rotateZ(90deg);
+  } */
+/* to {
+    transform: rotateX(90deg);
+  }
+}
+
+.rollDice {
+  animation-name: roll;
+  animation-duration: 1s;
+  /* animation-timing-function: ease-in; */
+/*animation-direction: normal;
+  animation-iteration-count: 1;
+}  */
