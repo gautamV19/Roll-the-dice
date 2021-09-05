@@ -1,3 +1,6 @@
+body {
+  background-color: lightgray;
+}
 .point {
   height: 13px;
   width: 13px;
@@ -12,13 +15,17 @@
   background-color: aquamarine;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
+  position: fixed;
+}
+.cube-two .face {
+  background-color: aqua;
 }
 .cube {
   transform-style: preserve-3d;
   margin-top: 30vh;
   margin-left: 20vw;
-  /* transform: rotatex(455deg) rotateY(-25deg); */
+  /* transform: rotatex(25deg) rotateY(-25deg); */
+  position: relative;
 }
 .front {
   z-index: 3;
@@ -90,3 +97,41 @@ button {
 /*animation-direction: normal;
   animation-iteration-count: 1;
 }  */
+
+.score-board {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+#score-value {
+  display: flex;
+  justify-content: space-evenly;
+}
+.score {
+  font-size: 39px;
+  color: red;
+  font-weight: 900;
+}
+.one {
+  color: green;
+}
+.two {
+  color: blue;
+}
+#score-heading {
+  display: flex;
+  justify-content: center;
+}
+
+#winner {
+  position: absolute;
+  background-color: pink;
+  margin-top: 26vh;
+  height: 50px;
+  width: 300px;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 40vw;
+  color: red;
+  font-weight: 800;
+}
